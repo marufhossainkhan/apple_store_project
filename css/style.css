@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo {
     width: 20%;
     display: flex;
@@ -25,6 +29,7 @@
     cursor: pointer;
     position: sticky;
     top: 0%;
+
 }
 
 .navlist {
@@ -132,7 +137,7 @@
 }
 
 
-.contact .btn-dark{
+.contact .btn-dark {
     color: gray;
     padding: 5px;
     margin: 2px 6px 14px 6px;
@@ -143,13 +148,13 @@
 
 .section {
     display: flex;
-    height: 400px;
+    /* height: 400px; */
     align-items: center;
     justify-content: center;
     max-width: 80%;
     margin: auto;
     font-family: 'Roboto Slab', serif;
-
+    padding: 10px;
 }
 
 .sec-left {
@@ -168,35 +173,36 @@
 }
 
 
-.contact{
+.contact {
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: aliceblue;
 }
 
-.cont{
+.cont {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 /* submit button moved by margin is shoud be change later */
-.cont-btn{
+.cont-btn {
     margin: 0px 0px 0px 443px;
 }
 
-.cont-btn:hover{
+.cont-btn:hover {
     background-color: rgb(34, 215, 89);
 }
 
-.contname{
+.contname {
     font-size: 30px;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
 }
 
-.ipcon{
+.ipcon {
     width: 350px;
     padding: 5px;
     margin: 5px;
@@ -204,7 +210,7 @@
     border-radius: 6px;
 }
 
-.text-footer{
+.text-footer {
     color: white;
     display: flex;
     justify-content: center;
@@ -212,7 +218,7 @@
     height: 60px;
 }
 
-.burger{
+.burger {
     display: none;
     position: absolute;
     cursor: pointer;
@@ -220,34 +226,70 @@
     top: 15px;
 }
 
-.line{
+.line {
     width: 33px;
     background-color: white;
     height: 4px;
     margin: 3px 3px;
 }
 
-@media only screen and (max-width:984px){
-    .navlist{
+@media only screen and (max-width: 984px) {
+    .navlist {
         flex-direction: column;
     }
-    .navbar{
+
+    .navbar {
         flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 500px;
     }
+
     .rightnav {
         text-align: center;
     }
-    #search{
+
+    #search {
         width: 100%;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
-    
-    .navheight-res{
-        height: 200px;
+
+    .nav-height-res {
+        height: 55px;
     }
-    .v-class-res{
+
+    .v-class-res {
         opacity: 0;
+    }
+
+    .btn-sm {
+        margin: 10px 5px 5px 5px;
+    }
+
+    .main-box {
+        flex-direction: column-reverse;
+
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .bigtxt {
+        text-align: center;
+    }
+
+    .smalltxt {
+        text-align: center;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0px;
     }
 }
